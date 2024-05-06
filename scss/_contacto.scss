@@ -1,0 +1,52 @@
+.contenedor{
+    main{
+        width: 100%;
+        padding: 15px 0;
+        background-color: $blanco;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-area: main;
+    } 
+    .contactos{
+        display: flex;
+        display: grid;
+        background-color: $gris;
+        opacity: .9;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: 0.75fr 4fr;
+        grid-template-areas: 
+        "contacto contacto"
+        "formulario informacion"
+    }
+    .titulos{
+        background-color: $verde;
+        grid-area: contacto;
+        text-align: center;
+        h1{
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .formulario{
+        background-color: $gris;
+        text-align: center;
+        grid-area: formulario;
+        justify-self: center;
+        align-self: center;
+        font-size: 25px;
+    }
+    .informacion{
+        background-color: $gris;
+        text-align: center;
+        grid-area: informacion;
+        justify-self: center;
+        align-self: center;
+        font-size: 25px;
+        ul{
+            list-style-type: none;
+        }
+    }
+}
